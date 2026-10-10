@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Lake Side Cafe</title>
+    <meta name="description" content="Lake Side Cafe — bold lakeside brunch, specialty coffee, and sunset plates by the water.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Caprasimo&family=Instrument+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <svg width="0" height="0" aria-hidden="true" focusable="false" class="sprite">
+        <defs>
+            <symbol id="arrow" viewBox="0 0 24 24">
+                <path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </symbol>
+            <symbol id="wave" viewBox="0 0 120 30">
+                <path d="M2 15c10 0 10-10 20-10s10 10 20 10 10-10 20-10 10 10 20 10 10-10 20-10 10 10 20 10" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+            </symbol>
+            <symbol id="x" viewBox="0 0 24 24">
+                <path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            </symbol>
+            <symbol id="menu-icon" viewBox="0 0 24 24">
+                <path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            </symbol>
+        </defs>
+    </svg>
+
+    <header class="site-bar" id="siteBar" aria-label="Site navigation">
+        <a class="brand" href="#top" aria-label="Lake Side Cafe home">lake side cafe</a>
+        <nav class="nav" aria-label="Primary navigation">
+            <a href="#menu">Menu</a>
+            <a href="#story">Story</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#visit">Visit</a>
+        </nav>
+        <button class="nav-toggle" id="openSiteNav" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navSheet">
+            <svg aria-hidden="true"><use href="#menu-icon"></use></svg>
+        </button>
+    </header>
+
+    <main id="top">
+        <section class="hero" aria-label="Lake Side Cafe introduction">
+            <div class="hero__frame">
+                <div class="hero__topline">
+                    <a class="brand brand--hero" href="#top">lake side cafe</a>
+                    <nav class="nav nav--hero" aria-label="Hero navigation">
+                        <a href="#menu">Menu</a>
+                        <a href="#story">Story</a>
+                        <a href="#reviews">Reviews</a>
+                        <a href="#visit">Visit</a>
+                    </nav>
+                    <button class="nav-toggle nav-toggle--hero" id="openHeroNav" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navSheet">
+                        <svg aria-hidden="true"><use href="#menu-icon"></use></svg>
+                    </button>
+                </div>
+
+                <div class="hero__ripples" aria-hidden="true">
+                    <span></span><span></span><span></span><span></span>
+                </div>
+
+                <div class="hero__content">
+                    <p class="pill pill--live"><span class="dot"></span><span id="openStatus">Open daily · 8am – 9pm</span></p>
+                    <h1 class="hero__title" aria-label="Lake Side Cafe">
+                        <span class="hero__word"><span>L</span><span>A</span><span>K</span><span>E</span></span>
+                        <span class="hero__word"><span>S</span><span>I</span><span>D</span><span>E</span></span>
+                        <span class="hero__word"><span>C</span><span>A</span><span>F</span><span>E</span></span>
+                    </h1>
+                    <p class="hero__subtitle">Breakfast by the water. Coffee with a view. Dinner when the sky turns gold.</p>
+                    <div class="hero__actions">
+                        <a class="btn btn--sun" href="#menu">Explore menu <svg aria-hidden="true"><use href="#arrow"></use></svg></a>
+                        <a class="btn btn--white" href="#visit">Plan a visit</a>
+                    </div>
+                </div>
+
+                <div class="hero__posters" id="heroPosters" aria-label="Cafe highlights">
+                    <article class="poster poster--big poster--coffee" data-shift="-18">
+                        <span class="poster__label">Morning ritual</span>
+                        <div class="poster__art poster__art--cup" aria-hidden="true"><span></span></div>
+                        <h2>Specialty coffee, slow lake mornings.</h2>
+                    </article>
+                    <article class="poster poster--food" data-shift="12">
+                        <span class="poster__label">Brunch board</span>
+                        <div class="poster__art poster__art--plate" aria-hidden="true"><span></span></div>
+                        <h2>Big plates for hungry people.</h2>
+                    </article>
+                    <article class="poster poster--sunset" data-shift="20">
+                        <span class="poster__label">Golden hour</span>
+                        <div class="poster__art poster__art--sun" aria-hidden="true"><span></span></div>
+                        <h2>Stay till the water glows.</h2>
+                    </article>
+                </div>
+
+                <div class="hero__bottom">
+                    <span class="mono">Lake Side Cafe</span>
+                    <div class="hero__thumbs" aria-hidden="true"><i></i><i></i><i></i></div>
+                    <span class="mono">By the lake</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="quote" id="story" aria-label="Lake Side Cafe story">
+            <div class="marquee" aria-hidden="true">
+                <div class="marquee__track">
+                    <span>Lake-view coffee</span><svg><use href="#wave"></use></svg><span>Fresh brunch</span><svg><use href="#wave"></use></svg><span>Sunset plates</span><svg><use href="#wave"></use></svg><span>Slow mornings</span><svg><use href="#wave"></use></svg>
+                    <span>Lake-view coffee</span><svg><use href="#wave"></use></svg><span>Fresh brunch</span><svg><use href="#wave"></use></svg><span>Sunset plates</span><svg><use href="#wave"></use></svg><span>Slow mornings</span><svg><use href="#wave"></use></svg>
+                </div>
+            </div>
+            <div class="quote__body wrap">
+                <p>Not just a cafe near water. A loud, bright, happy little table where crispy toast, proper coffee, and lake breeze all arrive together.</p>
+                <span class="sticker">Built for breakfast, catch-ups, and golden-hour cravings</span>
+            </div>
+        </section>
+
+        <section class="section menu-section" id="menu" aria-labelledby="menuTitle">
+            <div class="wrap">
+                <div class="section-head">
+                    <div>
+                        <span class="eyebrow">Fresh from the counter</span>
+                        <h2 id="menuTitle">The menu</h2>
+                    </div>
+                    <p>Simple cafe favourites with a lakeside mood: crisp, warm, generous, and made to share.</p>
+                </div>
+
+                <div class="menu-callout reveal">
+                    <p>Breakfast all day. Lunch from 11. Sunset snacks from 5.</p>
+                    <button class="btn btn--sun" type="button" id="openMenu">See full menu <svg aria-hidden="true"><use href="#arrow"></use></svg></button>
+                </div>
+
+                <div class="dish-grid" aria-label="Featured dishes">
+                    <article class="dish dish--hero reveal">
+                        <div class="dish__visual dish__visual--eggs"><span class="sticker">Best seller</span></div>
+                        <div class="dish__copy">
+                            <div class="dish__row"><h3>Lake Side Big Breakfast</h3><strong>₹420</strong></div>
+                            <p>Eggs your way, grilled tomato, mushrooms, hash brown, toast, and house relish.</p>
+                        </div>
+                    </article>
+                    <article class="dish dish--toast reveal">
+                        <div class="dish__visual dish__visual--toast"></div>
+                        <div class="dish__copy">
+                            <div class="dish__row"><h3>Avocado Toast</h3><strong>₹260</strong></div>
+                            <p>Sourdough, smashed avo, chilli oil, seeds, lemon, and a soft egg.</p>
+                        </div>
+                    </article>
+                    <article class="dish dish--coffee reveal">
+                        <div class="dish__visual dish__visual--latte"><span class="sticker">Coffee</span></div>
+                        <div class="dish__copy">
+                            <div class="dish__row"><h3>House Latte</h3><strong>₹180</strong></div>
+                            <p>Double shot espresso, silky milk, and a clean caramel finish.</p>
+                        </div>
+                    </article>
+                    <article class="dish dish--burger reveal">
+                        <div class="dish__visual dish__visual--burger"></div>
+                        <div class="dish__copy">
+                            <div class="dish__row"><h3>Lake Burger</h3><strong>₹360</strong></div>
+                            <p>Crispy chicken or veg patty, slaw, cheddar, pickles, and fries.</p>
+                        </div>
+                    </article>
+                    <article class="dish dish--pasta reveal">
+                        <div class="dish__visual dish__visual--pasta"></div>
+                        <div class="dish__copy">
+                            <div class="dish__row"><h3>Sunset Alfredo</h3><strong>₹340</strong></div>
+                            <p>Creamy pasta, roasted garlic, parmesan, basil, and cracked pepper.</p>
+                        </div>
+                    </article>
+                    <article class="dish dish--cooler reveal">
+                        <div class="dish__visual dish__visual--cooler"></div>
+                        <div class="dish__copy">
+                            <div class="dish__row"><h3>Blue Lake Cooler</h3><strong>₹190</strong></div>
+                            <p>Citrus, mint, sparkling soda, and a bright blue summer finish.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section gallery-section" aria-labelledby="galleryTitle">
+            <div class="wrap">
+                <div class="section-head section-head--split">
+                    <div>
+                        <span class="eyebrow">What it feels like</span>
+                        <h2 id="galleryTitle">Seats, steam, sunlight.</h2>
+                    </div>
+                    <p>Photo-ready corners without looking like a showroom. A cafe made for real tables, loud laughs, and one more coffee.</p>
+                </div>
+                <div class="gallery-grid">
+                    <article class="gallery-card gallery-card--wide reveal"><span>01</span><h3>Window seats facing the water</h3></article>
+                    <article class="gallery-card gallery-card--tall reveal"><span>02</span><h3>Counter coffee and warm bakes</h3></article>
+                    <article class="gallery-card reveal"><span>03</span><h3>Big brunch plates</h3></article>
+                    <article class="gallery-card gallery-card--blue reveal"><span>04</span><h3>Evening mocktails</h3></article>
+                    <article class="gallery-card gallery-card--sun reveal"><span>05</span><h3>Golden-hour tables</h3></article>
+                </div>
+            </div>
+        </section>
+
+        <section class="reviews" id="reviews" aria-labelledby="reviewTitle">
+            <div class="reviews__stage wrap">
+                <div class="reviews__intro">
+                    <span class="eyebrow">Table talk</span>
+                    <h2 id="reviewTitle">People come back for the view. Then for the food.</h2>
+                    <div class="score"><b>4.8</b><span>★★★★★</span><small>early guest rating</small></div>
+                </div>
+                <div class="review-river" aria-label="Guest reviews">
+                    <article class="review-card"><span>★★★★★</span><p>“Best place for a slow breakfast. The coffee is strong and the lake view makes everything better.”</p><b>Aditi</b></article>
+                    <article class="review-card review-card--yellow"><span>★★★★★</span><p>“The burger and fries were properly crisp. Stayed for one drink and ended up ordering dessert too.”</p><b>Rohan</b></article>
+                    <article class="review-card review-card--blue"><span>★★★★☆</span><p>“Bright, playful, and not boring. Perfect for evening chai with friends.”</p><b>Meera</b></article>
+                    <article class="review-card"><span>★★★★★</span><p>“That Blue Lake Cooler is dangerous. One becomes three.”</p><b>Kabir</b></article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section visit-section" id="visit" aria-labelledby="visitTitle">
+            <div class="wrap visit-grid">
+                <div class="visit-copy reveal">
+                    <span class="eyebrow">Plan your visit</span>
+                    <h2 id="visitTitle">Come hungry. Leave slower.</h2>
+                    <p>Add the exact address and phone number when ready. The layout is built so real details can drop in cleanly.</p>
+                    <div class="visit-actions">
+                        <a class="btn btn--sun" href="https://www.google.com/maps/search/?api=1&query=Lake+Side+Cafe" target="_blank" rel="noopener">Open maps <svg aria-hidden="true"><use href="#arrow"></use></svg></a>
+                        <a class="btn btn--white" href="#menu">See menu</a>
+                    </div>
+                </div>
+                <div class="visit-cards">
+                    <article class="info-card info-card--yellow reveal">
+                        <span class="mono">Location</span>
+                        <h3>By the lake</h3>
+                        <p>Exact address goes here</p>
+                    </article>
+                    <article class="info-card reveal">
+                        <span class="mono">Hours</span>
+                        <h3>8am – 9pm</h3>
+                        <p>Open daily for breakfast, lunch, and evening snacks.</p>
+                        <div class="week" id="week" aria-label="Check cafe hours by day">
+                            <button type="button" data-day="0">Mon</button>
+                            <button type="button" data-day="1">Tue</button>
+                            <button type="button" data-day="2">Wed</button>
+                            <button type="button" data-day="3">Thu</button>
+                            <button type="button" data-day="4">Fri</button>
+                            <button type="button" data-day="5">Sat</button>
+                            <button type="button" data-day="6">Sun</button>
+                        </div>
+                        <p class="day-info" id="dayInfo" aria-live="polite">Tap a day to check hours.</p>
+                    </article>
+                    <article class="info-card info-card--blue reveal">
+                        <span class="mono">Call</span>
+                        <h3>+91 00000 00000</h3>
+                        <button class="copy" type="button" data-copy="+91 00000 00000">Copy number</button>
+                    </article>
+                    <article class="info-card reveal">
+                        <span class="mono">Email</span>
+                        <h3>hello@lakeside.cafe</h3>
+                        <button class="copy" type="button" data-copy="hello@lakeside.cafe">Copy email</button>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" aria-label="Footer">
+        <div class="footer__top wrap">
+            <h2>lake side cafe</h2>
+            <div class="footer__cols">
+                <div><span class="mono">Explore</span><a href="#menu">Menu</a><a href="#story">Story</a><a href="#reviews">Reviews</a><a href="#visit">Visit</a></div>
+                <div><span class="mono">Hours</span><p>Open daily<br>8am – 9pm</p></div>
+                <div><span class="mono">Mood</span><p>Bold brunch<br>Blue water<br>Warm coffee</p></div>
+            </div>
+        </div>
+        <div class="footer__word" aria-hidden="true">cafe</div>
+        <div class="footer__legal wrap mono"><span>© <span id="year">2026</span> Lake Side Cafe</span><span>Built for the lake crowd</span></div>
+    </footer>
+
+    <dialog class="menu-sheet" id="menuSheet" aria-labelledby="sheetTitle">
+        <div class="menu-sheet__panel">
+            <div class="menu-sheet__head">
+                <h2 id="sheetTitle">Full menu</h2>
+                <button class="close" type="button" id="closeMenu" aria-label="Close menu"><svg aria-hidden="true"><use href="#x"></use></svg></button>
+            </div>
+            <div class="menu-sheet__body">
+                <section>
+                    <h3>Breakfast <span>8am – 12pm</span></h3>
+                    <div class="menu-line"><b>Lake Side Big Breakfast</b><i></i><em>₹420</em><p>Eggs, toast, hash brown, mushrooms, tomato, relish.</p></div>
+                    <div class="menu-line"><b>Avocado Toast</b><i></i><em>₹260</em><p>Sourdough, smashed avo, lemon, chilli oil, seeds.</p></div>
+                    <div class="menu-line"><b>Pancake Stack</b><i></i><em>₹300</em><p>Butter, maple, seasonal fruit, whipped cream.</p></div>
+                    <div class="menu-line"><b>Masala Omelette Roll</b><i></i><em>₹220</em><p>Eggs, onion, chilli, coriander, cheese, toasted roll.</p></div>
+                </section>
+                <section>
+                    <h3>Lunch & Dinner <span>11am – 9pm</span></h3>
+                    <div class="menu-line"><b>Lake Burger</b><i></i><em>₹360</em><p>Crispy chicken or veg patty, slaw, cheddar, fries.</p></div>
+                    <div class="menu-line"><b>Sunset Alfredo</b><i></i><em>₹340</em><p>Creamy pasta, roast garlic, parmesan, basil.</p></div>
+                    <div class="menu-line"><b>Peri Peri Fries</b><i></i><em>₹190</em><p>Hot fries, house peri peri, garlic dip.</p></div>
+                    <div class="menu-line"><b>Grilled Sandwich</b><i></i><em>₹240</em><p>Cheese, vegetables, herbed butter, tomato chutney.</p></div>
+                </section>
+                <section>
+                    <h3>Drinks <span>All day</span></h3>
+                    <div class="menu-line"><b>House Latte</b><i></i><em>₹180</em><p>Double shot espresso with silky milk.</p></div>
+                    <div class="menu-line"><b>Cold Coffee</b><i></i><em>₹210</em><p>Rich, chilled, creamy, and not too sweet.</p></div>
+                    <div class="menu-line"><b>Blue Lake Cooler</b><i></i><em>₹190</em><p>Citrus, mint, sparkling soda, blue summer finish.</p></div>
+                    <div class="menu-line"><b>Lemon Iced Tea</b><i></i><em>₹170</em><p>Fresh tea, lemon, mint, and ice.</p></div>
+                </section>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog class="nav-sheet" id="navSheet" aria-labelledby="navSheetTitle">
+        <div class="nav-sheet__panel">
+            <div class="nav-sheet__head">
+                <span class="brand" id="navSheetTitle">lake side cafe</span>
+                <button class="close" type="button" id="closeNav" aria-label="Close navigation"><svg aria-hidden="true"><use href="#x"></use></svg></button>
+            </div>
+            <nav class="nav-sheet__links" aria-label="Mobile navigation">
+                <a href="#menu">Menu</a>
+                <a href="#story">Story</a>
+                <a href="#reviews">Reviews</a>
+                <a href="#visit">Visit</a>
+            </nav>
+            <div class="nav-sheet__footer">
+                <p class="mono">Open daily · 8am – 9pm</p>
+            </div>
+        </div>
+    </dialog>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="script.js"></script>
+</body>
+</html>
